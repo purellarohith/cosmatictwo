@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { enableScreens } from 'react-native-screens';
@@ -8,14 +9,13 @@ import ScreenTwo from './Components/Screens/ScreenTwo/ScreenTwo';
 
 const App = () => {
   enableScreens();
-  
 
   const Stack = createStackNavigator();
 
   return (
     <View style={styles.main}>
       <NavigationContainer>
-        <Stack.Navigator headerMode="none">
+        <Stack.Navigator headerMode="none" initialRouteName="screenone">
           <Stack.Screen name="screenone" component={ScreenOne} />
           <Stack.Screen name="screentwo" component={ScreenTwo} />
         </Stack.Navigator>
