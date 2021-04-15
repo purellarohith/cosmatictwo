@@ -9,6 +9,7 @@ import ScreenTwo from './Components/Screens/ScreenTwo/ScreenTwo';
 
 const App = () => {
   enableScreens();
+  
 
   const Stack = createStackNavigator();
 
